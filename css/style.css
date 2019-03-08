@@ -1,0 +1,11 @@
+body {
+	color: black;
+  font-family: arial;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+ }
+.mainimage {
+   border-radius: 20%;
+ }
