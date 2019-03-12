@@ -1,0 +1,63 @@
+/*Cocktails CSS*/
+/* example colour palette*/
+/*#eaece5
+#b2c2bf
+#c0ded9
+#3b3a30
+More available here: https://www.w3schools.com/colors/colors_palettes.asp
+*/
+body{
+  font-family: helvetica;
+  background-color: #eaece5;
+  color: #737373;
+  }
+#navbar{
+
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #3b3a30;
+  width: fill-availavle;
+  padding:2vh;
+}
+#navbar a {
+  color: #eaece5;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  float: right;
+  text-align: center;
+}
+#navbar a:hover{
+  transition: ease;
+  color: #b2c2bf;
+  }
+
+h1{
+    display:flex;
+    justify-content: center;
+    font-weight: 520;
+    color: #737373;
+    font-size: 2em;
+  }
+
+  h2{
+    display:flex;
+    justify-content: center;
+    font-weight: 520;
+    color: #737373;
+    font-size: 1.5em;
+  }
+  h3{
+    display:flex;
+    justify-content: center;
+    font-weight: 520;
+    color: #737373;
+    font-size: 1.2em;
+}
+a{
+  color: #737373;
+}
+a:hover{
+  color: #3b3a30;
+}
