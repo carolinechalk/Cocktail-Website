@@ -39,6 +39,7 @@ h1{
     font-weight: 520;
     color: #737373;
     font-size: 2em;
+    padding: 2vh;
   }
 
   h2{
@@ -47,6 +48,7 @@ h1{
     font-weight: 520;
     color: #737373;
     font-size: 1.5em;
+    padding: 2vh;
   }
   h3{
     display:flex;
@@ -54,10 +56,30 @@ h1{
     font-weight: 520;
     color: #737373;
     font-size: 1.2em;
+    padding: 2vh;
+}
+
+h4{
+  display:flex;
+  align-items: center;
+  font-weight: 520;
+  color: #737373;
+  font-size: 1.1em;
+  padding: 2vh;
 }
 a{
   color: #737373;
 }
 a:hover{
   color: #3b3a30;
+}
+
+.recipeimage {
+  max-width:275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+#vodka_martini < method {
+  align-items: flex-end;
 }
