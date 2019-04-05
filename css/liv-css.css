@@ -78,14 +78,14 @@ a:hover {
   -webkit-transform: rotate(20deg);
 }
 
-.cocktail_glass_drunk {
+/*.cocktail_glass_drunk {
   max-width: 35px;
   max-height: auto;
   float: left;
   cursor: pointer;
   margin-left: 15px;
 
-}
+}*/
 
 #cocktail_shaker {
   max-width: 35px;
