@@ -5,6 +5,7 @@
 #f18973
 #b2b2b2
 #bc5a45
+
 // mauve & blue
 #c8c3cc
 #8ca3a3
@@ -18,6 +19,7 @@ body{
   /*font-family: 'Inconsolata', monospace;*/
   font-family: 'Quicksand', sans-serif;
   font-size: 1em;
+
   }
 
 #index_content {
@@ -31,6 +33,7 @@ body{
 #index_content h2 {
   font-weight: bold;
   font-size: 1.75em;
+
 }
 
 a {
@@ -228,8 +231,8 @@ h1:before, h1:after {
   border-radius: 4px;
   opacity: .98;
 }
-
-.recipe_info {
+}
+recipe_info {
     background-color: #f0f0f0;
     min-width: 80%;
     height: 100%;
