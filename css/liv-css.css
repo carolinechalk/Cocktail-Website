@@ -14,7 +14,10 @@
 body{
   background-image: url("../images/geo_pattern_1.jpg");
   color: black;
-  font-family: 'Nunito Sans', sans-serif;
+  /*font-family: 'Roboto Slab', serif;*/
+  /*font-family: 'Inconsolata', monospace;*/
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
   }
 
 #index_content {
@@ -22,6 +25,12 @@ body{
   padding: 20px;
   margin-left: 50px;
   margin-right: 50px;
+  font-weight: 550;
+}
+
+#index_content h2 {
+  font-weight: bold;
+  font-size: 1.75em;
 }
 
 a {
@@ -45,6 +54,8 @@ a:hover {
   left: 0;
   width: 100%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  opacity: .99;
   }
   #navbar h2 {
     display: flex;
@@ -63,7 +74,7 @@ a:hover {
   font-weight: bold;
 }
 
-#cocktail_glass{
+ #cocktail_glass {
   max-width: 35px;
   max-height: auto;
   float: left;
@@ -71,19 +82,31 @@ a:hover {
   margin-left: 15px;
   -webkit-transition: -webkit-transform .8s;
           transition:         transform .8s;
-}
+        }
 
 #cocktail_glass:hover {
   -webkit-transform: rotate(20deg);
 }
 
-/*.cocktail_glass_drunk {
-  max-width: 35px;
-  max-height: auto;
-  float: left;
-  cursor: pointer;
-  margin-left: 15px;
-}*/
+  .home_hover {
+    display: none;
+    width: 50px;
+    background-color: #f0f0f0;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px;
+    position: absolute;
+    z-index: 10;
+    float:left;
+    margin-left: 60px;
+    margin-top: 45px;
+    opacity: 0.6;
+  }
+
+.nav_home:hover .home_hover {
+  display: block;
+}
 
 #cocktail_shaker {
   max-width: 35px;
@@ -93,14 +116,12 @@ a:hover {
   margin-right:15px;
   -webkit-transition: -webkit-transform .6s;
           transition:         transform .6s;
-
-}
+      }
 
 #cocktail_shaker:hover {
   -webkit-transform: rotate(50deg);
 
 }
-
 .dropdown {
   float: right;
   }
@@ -122,15 +143,16 @@ a:hover {
   box-shadow:  0px 3px 6px 0px rgba(0,0,0,0.1);
   z-index: 1;
   right:0;
+  margin-right: 10px;
   border-radius: 4px;
+  opacity: 0.95;
 }
 
-.dropdown-content ul {
+.dropdown-content li {
   list-style-type: none;
-}
+  }
 
-.dropdown-content a {
-  float: left;
+.dropdown-content li {
   color: black;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -144,6 +166,11 @@ a:hover {
   display: block;
 }
 
+.dropdown-content li:hover{
+  background-color: #c8c3cc;
+  width:100%;
+  }
+
 /* Index page content */
 
 .home_carousel {
@@ -156,7 +183,39 @@ a:hover {
   padding-bottom: 100px;
   text-align: center;
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
+  opacity: .98;
 }
+
+.home_carousel h1{
+  font-size: 3em;
+  font-family: 'Bungee Shade', cursive;
+  /*font-family: 'Ewert', cursive;*/
+  }
+
+.home_carousel img {
+  align-items: center;
+  padding-top:20px;
+  width: 80px;
+}
+
+h1:before, h1:after {
+ background-color: white;
+ content: "";
+ display: inline-block;
+ height: 3px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+  h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
 
 .about_us {
   background-color: #f0f0f0;
@@ -167,6 +226,7 @@ a:hover {
   margin-bottom: 20px;
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
   border-radius: 4px;
+  opacity: .98;
 }
 
 .recipe_info {
@@ -178,6 +238,7 @@ a:hover {
     margin-bottom: 20px;
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
     border-radius: 4px;
+    opacity: .98;
 }
 
 .social_buttons {
@@ -188,4 +249,5 @@ a:hover {
   margin-bottom: 20px;
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
   border-radius: 4px;
+  opacity: .98;
 }
