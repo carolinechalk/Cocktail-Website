@@ -231,17 +231,17 @@ h1:before, h1:after {
   border-radius: 4px;
   opacity: .98;
 }
-}
-recipe_info {
-    background-color: #f0f0f0;
-    min-width: 80%;
-    height: 100%;
-    padding: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
-    border-radius: 4px;
-    opacity: .98;
+
+.recipe_info {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  opacity: .98;
 }
 
 .social_buttons {
