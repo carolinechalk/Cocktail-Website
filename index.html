@@ -21,7 +21,10 @@
   <div id="navbar">
       <!--<input placeholder="Find your cocktail here..."
       <button onclick="document.getElementById("searchFun")">Search</button>-->
-      <a href="index.html"><img id="cocktail_glass" src="./images/cocktail_glass.png"></a>
+      <div class="nav_home">
+        <a href="index.html"><img id="cocktail_glass" src="./images/cocktail_glass.png"></a>
+        <span class="home_hover">Home</span><!-- This could also be the place for a search-->
+      </div>
       <div class="dropdown">
         <button><img id="cocktail_shaker" src="./images/cocktail_shaker.png">
           <i class="fa fa-caret-down"></i></button>
@@ -40,7 +43,7 @@
 
   <div class="home_carousel">
     <h1> THE ALCOHOLY BIBLE</h1>
-    <img src="../images/cocktail_gif_white.png">
+    <img class="carousel_img" src="./images/cocktail_gif_white.png">
   </div>
 
   <div id="index_content">
@@ -50,9 +53,7 @@
             Here we have synthesised a guide to the galaxy of cocktails. Be your tipple Rum, Vodka, Gin or Whiskey, we have something for you. Within our bespoke catalogue of classic and not-so-class cocktails we have:
         </p>
         <ul>
-            <!-- I'd like to have links to these pages on the list items as well -->
-            <li> Recipes </li>
-            <li> Locations in London where they are done the best</li>
+            <li> Recipes Cards</li>
             <li> A cocktail searcher</li>
         </ul>
     </div>
