@@ -10,218 +10,205 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/liv-css.css">
   <link rel="stylesheet" type="text/css" href="css/recipe.css">
-  <title> AHB Vodka</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Ewert|Roboto+Slab|Inconsolata|Quicksand" rel="stylesheet">
+  <title>Gin</title>
 </head>
 <body>
   <!--Navigation bar-->
   <div id="navbar">
-    <a href="index.html">Home</a><!-- if we add an ID to each page then we can navigate them by links throughout the website-->
-    <a href="vodka.html">Vodka</a>
-    <a href="gin.html">Gin</a>
-    <a href="rum.html">Rum</a>
-    <a href="whiskey.html">Whiskey</a>
-    <a href="virgin.html">Virgin</a>
-    <input placeholder="Find your cocktail here...">
-    <button onclick="document.getElementById("searchFun")">Search</button>
-
+    <!--<input placeholder="Find your cocktail here..."
+    <button onclick="document.getElementById("searchFun")">Search</button>-->
+    <div class="nav_home">
+      <a href="index.html"><img id="cocktail_glass" src="./images/cocktail_glass.png" /></a>
+      <span class="home_hover">Home</span><!-- This could also be the place for a search-->
+    </div>
+    <div class="dropdown">
+      <button>
+        <img id="cocktail_shaker" src="./images/cocktail_shaker.png">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="vodka.html">Vodka</a></li>
+          <li><a href="gin.html">Gin</a></li>
+          <li><a href="rum.html">Rum</a></li>
+         </ul>
+      </div>
+    </div>
   </div>
+
   <body>
-    <div id="gin">
-      <h1>Gin</h1>
-      <!--bootstrap-->
-      <!---negroniModal-->
+    <main role="main" class="container">
+    <div class="row" id="gin">
+      <h1 class=header>Gin</h1>
+    </div>
       <div class="row">
-              <div class="col-md">
-                <div id="negroni" class="card recipe-card">
-                  <img class="recipeimage card-img-top" src="./images/negroni.jpg">
-                  <div class="card-body">
-                    <h5 class="card-title">Negroni</h5>
-                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#negroniIngredients">Ingredients</button>
-                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#negroniMethod">Method</button>
-                  </div>
-                </div>
+        <div class="col-md">
+          <div id="negroni" class="card recipe-card">
+            <img class="recipeimage card-img-top" src="./images/negroni.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Negroni</h5>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#negroniIngredients">Ingredients</button>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#negroniMethod">Method</button>
+            </div>
+          </div>
 
-                <div class="modal fade" id="negroniIngredients" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Ingredients</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <ul>
-                          <li class="gin">25ml Gin</li>
-                          <li class="campari">25ml Campari</li>
-                          <li class="vermouth">25ml Sweet Vermouth</li>
-                          <li>Ice</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+          <div class="modal fade" id="negroniIngredients" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ingredients</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-
-                <div class="modal fade" id="negroniMethod" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Method</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <ol>
-                          <li>Add all the ingredients into a mixing glass and stir.</li>
-                          <li>Pour into a chilled highball glass over ice.</li>
-                          <li>Garnish with a celery stick and lemon wedge.</li>
-                        </ol>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!---negroniModal-->
-              <div class="col-md">
-                <div id="gin-fizz" class="card recipe-card">
-                  <img class="recipeimage card-img-top" src="./images/gin_fizz.jpg">
-                  <div class="card-body">
-                    <h5 class="card-title">Gin Fizz</h5>
-                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#gin-fizzIngredients">Ingredients</button>
-                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#gin-fizzMethod">Method</button>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="gin-fizzIngredients" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Ingredients</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <ul>
-                          <li class="gin">50ml Bombay Sapphire Gin</li>
-                          <li class="lemon">15ml Lemon juice</li>
-                          <li class="orange blossom water">2 Dashes orange blossom water</li>
-                          <li class="sugar syrup">10ml Sugar syrup</li>
-                          <li class="cream">60m Cream</li>
-                          <li class="egg white">1 Egg white</li>
-                          <li class="soda">Soda water</li>
-                          <li> Ice </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="gin-fizzMethod" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Method</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <ol>
-                          <li>You can either buy pre-mixed sugar syrup or if you want to make your own.</li>
-                          <li>Put all of the ingredients into a shaker without ice and shake hard to help the egg white turn to foam.</li>
-                          <li>Put ice into the shaker and shake hard for another 20 seconds to chill the liquid.</li>
-                          <li>Strain the mix into a glass filled with ice and top up your glass with soda water.</li>
-                        </ol>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md">
-                <div id="earl grey martini" class="card recipe-card">
-                  <img class="recipeimage card-img-top" src="./images/earl_grey_martini.jpg">
-                  <div class="card-body">
-                    <h5 class="card-title">Moscow Mule</h5>
-                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#earlgreymartiniIngredients">Ingredients</button>
-                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#earlgreymartiniMethod">Method</button>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="earlgreymartiniIngredients" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Ingredients</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <ul>
-                          <li class="gin">50ml Gin</li>
-                          <li class="tea">35ml Cold, strongly-brewed Earl Grey tea</li>
-                          <li class="lemon">20ml Lemon juice</li>
-                          <li class="sugar syrup">10ml Sugar syrup</li>
-                          <li class="egg white">½ Egg white</li>
-                          <li class="lemon">Twist lemon peel (garnish)</li>
-                          <li>Ice</li>
-                          <<li> Try with:</li>
-                          <li class="honey">Honey instead of Sugar Syrup & garnish with Lavender for a more fragrant twist!</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="earlgreymartinieMethod" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Method</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <ol>
-                          <li>To make the Earl Grey tea, brew in water just below boiling point for 3 minutes, then leave to cool.</li>
-                          <li>Place the ice, gin, cooled Earl Grey tea, lemon juice, sugar syrup and egg white into a cocktail shaker and shake well.</li>
-                          <li>Strain the liquid into a Martini glass and garnish with a twist of lemon peel.</li>
-                        </ol>
-                      </div>
-                    </div>
-                  </div>
+                <div class="modal-body">
+                  <ul>
+                    <li class="gin">25ml Gin</li>
+                    <li class="campari">25ml Campari</li>
+                    <li class="vermouth">25ml Sweet Vermouth</li>
+                    <li>Ice</li>
+                  </ul>
                 </div>
               </div>
             </div>
-      <!--bootstrapvodka-->
-      <!--negronihtml-->
+          </div>
 
+          <div class="modal fade" id="negroniMethod" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Method</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li>Add all the ingredients into a mixing glass and stir.</li>
+                    <li>Pour into a chilled highball glass over ice.</li>
+                    <li>Garnish with a celery stick and lemon wedge.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div id="gin-fizz" class="card recipe-card">
+            <img class="recipeimage card-img-top" src="./images/gin_fizz.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Gin Fizz</h5>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#gin-fizzIngredients">Ingredients</button>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#gin-fizzMethod">Method</button>
+            </div>
+          </div>
 
-      <div id="earl grey martini">
-        <h2>Earl Grey Martini</h2>
-        <img class="recipeimage" src="./images/earl_grey_martini.jpg">
-        <h3>Ingredients</h3>
-        <ul>
-          <li class="gin">50ml Gin</li>
-          <li class="tea">35ml Cold, strongly-brewed Earl Grey tea</li>
-          <li class="lemon">20ml Lemon juice</li>
-          <li class="sugar syrup">10ml Sugar syrup</li>
-          <li class="egg white">½ Egg white</li>
-          <li class="lemon">Twist lemon peel (garnish)</li>
-          <li>Ice</li>
-          <<li> Try with:</li>
-          <li class="honey">Honey instead of Sugar Syrup & garnish with Lavender for a more fragrant twist!</li>
-        </ul>
-        <h3>Method</h3>
-        <ul>
-          <li>To make the Earl Grey tea, brew in water just below boiling point for 3 minutes, then leave to cool.</li>
-          <li>Place the ice, gin, cooled Earl Grey tea, lemon juice, sugar syrup and egg white into a cocktail shaker and shake well.</li>
-          <li>Strain the liquid into a Martini glass and garnish with a twist of lemon peel.</li>
-        </ul>
+          <div class="modal fade" id="gin-fizzIngredients" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ingredients</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li class="gin">50ml Bombay Sapphire Gin</li>
+                    <li class="lemon">15ml Lemon juice</li>
+                    <li class="orange blossom water">2 Dashes orange blossom water</li>
+                    <li class="sugar syrup">10ml Sugar syrup</li>
+                    <li class="cream">60m Cream</li>
+                    <li class="egg white">1 Egg white</li>
+                    <li class="soda">Soda water</li>
+                    <li> Ice </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="gin-fizzMethod" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Method</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li>You can either buy pre-mixed sugar syrup or if you want to make your own.</li>
+                    <li>Put all of the ingredients into a shaker without ice and shake hard to help the egg white turn to foam.</li>
+                    <li>Put ice into the shaker and shake hard for another 20 seconds to chill the liquid.</li>
+                    <li>Strain the mix into a glass filled with ice and top up your glass with soda water.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div id="earl grey martini" class="card recipe-card">
+            <img class="recipeimage card-img-top" src="./images/earl_grey_martini.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Earl Grey Martini</h5>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#earlgreymartiniIngredients">Ingredients</button>
+              <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#earlgreymartiniMethod">Method</button>
+            </div>
+          </div>
+
+          <div class="modal fade" id="earlgreymartiniIngredients" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Ingredients</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li class="gin">50ml Gin</li>
+                    <li class="tea">35ml Cold, strongly-brewed Earl Grey tea</li>
+                    <li class="lemon">20ml Lemon juice</li>
+                    <li class="sugar syrup">10ml Sugar syrup</li>
+                    <li class="egg white">½ Egg white</li>
+                    <li class="lemon">Twist lemon peel (garnish)</li>
+                    <li>Ice</li>
+                    <li> Try with:</li>
+                    <li class="honey">Honey instead of Sugar Syrup & garnish with Lavender for a more fragrant twist!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="earlgreymartiniMethod" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Method</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ol>
+                    <li>To make the Earl Grey tea, brew in water just below boiling point for 3 minutes, then leave to cool.</li>
+                    <li>Place the ice, gin, cooled Earl Grey tea, lemon juice, sugar syrup and egg white into a cocktail shaker and shake well.</li>
+                    <li>Strain the liquid into a Martini glass and garnish with a twist of lemon peel.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
