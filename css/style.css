@@ -265,6 +265,31 @@ h1:before, h1:after {
   opacity: .9;
 }
 
+/* contact page */
+
+#contact_content {
+margin: 20px;
+}
+
+.contact {
+  padding: 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  }
+
+.contact_social_buttons {
+  display: block;
+  background-color: #c0ded9;
+  padding: 20px;
+  margin: 50px;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  opacity: .85;
+  display: flex;
+  justify-content: center;
+}
+
 /* recipe cards */
 
 main {
