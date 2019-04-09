@@ -1,0 +1,255 @@
+/* CSS */
+/*
+// pink & purple
+#f4e1d2
+#f18973
+#b2b2b2
+#bc5a45
+/* mauve & blue
+#c8c3cc
+#8ca3a3
+#484f4f
+#563f46*/
+
+body{
+  background-color: d6d6d6;
+  color: black;
+  /*font-family: 'Roboto Slab', serif;*/
+  /*font-family: 'Inconsolata', monospace;*/
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+
+  }
+
+#index_content {
+  margin-top: 80px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-weight: 550;
+}
+
+#index_content h2 {
+  font-weight: bold;
+  font-size: 1.75em;
+
+}
+
+a {
+  color: #563f46;
+}
+
+a:hover {
+  color: #563f46;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navigation bar formatting */
+
+#navbar{
+  background-color:#563f46;
+  position: fixed;
+  border: none;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  opacity: .99;
+  }
+  #navbar h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+  }
+
+#navbar a {
+    text-decoration: none;
+  }
+
+#navbar a:hover{
+  color: #563f46;
+  font-weight: bold;
+}
+
+ #cocktail_glass {
+  max-width: 35px;
+  max-height: auto;
+  float: left;
+  cursor: pointer;
+  margin-left: 15px;
+  -webkit-transition: -webkit-transform .8s;
+          transition:         transform .8s;
+        }
+
+#cocktail_glass:hover {
+  -webkit-transform: rotate(20deg);
+}
+
+  .home_hover {
+    display: none;
+    width: 50px;
+    background-color: #f0f0f0;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px;
+    position: absolute;
+    z-index: 10;
+    float:left;
+    margin-left: 60px;
+    margin-top: 45px;
+    opacity: 0.6;
+  }
+
+.nav_home:hover .home_hover {
+  display: block;
+}
+
+#cocktail_shaker {
+  max-width: 35px;
+  max-height: auto;
+  float: right;
+  cursor: pointer;
+  margin-right:15px;
+  -webkit-transition: -webkit-transform .6s;
+          transition:         transform .6s;
+      }
+
+#cocktail_shaker:hover {
+  -webkit-transform: rotate(50deg);
+
+}
+.dropdown {
+  float: right;
+  }
+
+.dropdown button {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  min-width: 120px;
+  box-shadow:  0px 3px 6px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  right:0;
+  margin-right: 10px;
+  border-radius: 4px;
+  opacity: 0.95;
+}
+
+.dropdown-content li {
+  list-style-type: none;
+  }
+
+.dropdown-content li {
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li:hover{
+  background-color: #c8c3cc;
+  width:100%;
+  }
+
+/* Index page content */
+
+.home_header {
+  background-color: #484f4f;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
+  opacity: .98;
+}
+
+h1{
+  font-size: 3em;
+  font-family: 'Bungee Shade', cursive;
+  /*font-family: 'Ewert', cursive;*/
+  }
+
+.home_header_img {
+  align-items: center;
+  padding-top:20px;
+  width: 80px;
+}
+
+h1:before, h1:after {
+ background-color: white;
+ content: "";
+ display: inline-block;
+ height: 3px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+  h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+
+.about_us {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  opacity: .98;
+}
+
+.recipe_info {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  opacity: .98;
+}
+
+.social_buttons {
+  display: block;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  opacity: .98;
+}
